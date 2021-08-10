@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td> <input type="text" name="a" id="number" placeholder="Enter a number" /> </td>
+        </tr>
+        <tr>
+            <td> <button onclick="sum ()">Submit</button></td>
+        </tr>
+    </table>
+    <div id="n"></div>
+</body>
+
+<script type="text/javascript">
+    function sum() {
+        var n, i, sum = 0;
+        n = parseInt(document.getElementById("number").value);
+        for (i = 1; i <= n; i++) {
+            sum = sum + i;
+        }
+        document.getElementById("n").innerHTML = "Sum is :" + sum;
+    }
+</script>
+
+</html>

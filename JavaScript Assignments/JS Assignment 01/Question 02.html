@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Question 02</title>
+</head>
+
+
+
+<body>
+    <table>
+        <tr>
+            <td> <input type="text" name="a" id="number" placeholder="Enter a number" /> </td>
+        </tr>
+        <tr>
+            <td> <button onclick="sum ()">Submit</button></td>
+        </tr>
+    </table>
+    <div id="n"></div>
+
+
+    <script>
+        function sum() {
+            var n, i, sum = 0;
+            n = parseInt(document.getElementById("number").value);
+            for (i = 1; i <= n; i++) {
+                if (i % 3 == 0 || i % 5 == 0) {
+                    sum = sum + i;
+                }
+            }
+            document.getElementById("n").innerHTML = "Sum is :" + sum;
+        }
+    </script>
+</body>
+
+</html>

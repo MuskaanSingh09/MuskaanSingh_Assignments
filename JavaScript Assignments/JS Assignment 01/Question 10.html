@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Question 10</title>
+</head>
+
+<body>
+    <script>
+        function fibonacci() {
+            var first = 1;
+            var second = 1;
+            var next;
+
+            document.write("first number " + first + "<br>");
+            document.write("second number " + second + "<br>");
+
+            for (i = 1; i <= 100; i++) {
+                document.writeln(first + ",  ");
+                next = first + second;
+                first = second;
+                second = next;
+            }
+
+
+        }
+
+        fibonacci();
+    </script>
+</body>
+
+</html>
