@@ -16,13 +16,14 @@
         }
 
 
-        const compose = (f1, f2) => value => f1(f2(value));
-        var f1 = compose(square, double);
-        var f2 = compose(double, square);
-        f1(5);
-        f1(10);
-        f2(5);
-        f2(10);
+        function compose(square, double)
+        {
+            return square(double(v));
+        }
+        
+        var value = Math.floor(Math.random() * 10) + 1;
+        var result = compose(square,double);
+        document.write(result);
     </script>
 </body>
 
