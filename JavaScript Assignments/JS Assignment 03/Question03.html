@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+</head>
+<body>
+    <script>
+        class rectangle{
+          
+            constructor(h,w){
+                this.height=h;
+                this.width=w;
+            } 
+
+        }
+        let r = new rectangle(5,4);
+        console.log("height of  first rectangle is:",r.height);
+        console.log("width of  first rectangle is:",r.width);
+        //
+        r.hieght=50;
+
+        
+        console.log("height of  r.hieght  rectangle is:",r.height);
+        console.log("height of  r.height  rectangle is:",r.hieght);
+        
+        
+        rectangle.prototype.getArea=function(){
+            return this.height*this.width;
+        }
+        console.log("Area is : ",r.getArea());
+       
+    </script>
+    
+</body>
+</html>
